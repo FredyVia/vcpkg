@@ -4,6 +4,8 @@ vcpkg_from_github(
     REF "fuse-${VERSION}"
     SHA512 e82581eec24f464bab7a2e2c18fa6b738e6f9f3f0a065c74a18727549159595d69e98772af87fa31fe1e632a6808cc40a788ad3d0330aba4937d4326b8bd5862
     HEAD_REF master
+    PATCHES
+        fix-cpp.patch
 )
 
 vcpkg_configure_meson(
